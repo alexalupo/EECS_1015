@@ -1,27 +1,9 @@
-##################################
-# EECS1015 - York University
-# Author: Michael S. Brown
-# (c) MS Brown. This code cannot be shared without permission from the
-# author.
-# Lab 8 starter code
-#
-##################################
 import random
 
-
-def print_student_info():
-    print("Name: Alexa Lupo")
-    print("Student ID: 219411305")
-    print("Section B")
-    print("Email: alupo@my.yorku.ca")
-
-
-# class for task 2
 class virus:
     pass
 
 
-# class for task 1
 class lotto_ticket:
     ticket_counter = 1
 
@@ -35,7 +17,6 @@ class lotto_ticket:
         self.numbers = my_set
         print(my_set)
 
-    # self.ticket_counter
 
     def print_ticket(self):
         user_set = self.numbers
@@ -45,17 +26,13 @@ class lotto_ticket:
         return self.numbers
 
 
-def task0():
-    print_student_info()
-
-
 def lotto_draw():
     lotto_list = []
     while len(lotto_list) != 5:
         temp_comp = random.randint(1, 20)
         if temp_comp not in lotto_list:
             lotto_list.append(temp_comp)
-    # print(lotto_list)
+
     return lotto_list
 
 
@@ -67,7 +44,6 @@ def task1():
         print(f"You have ${amount}")
         amt_tickets = int(input("How many lotto tickets do you want [$2 each]? "))
     if amt_tickets == 0:
-        # print final amt (unchanged)
         quit
 
     tickets = []
@@ -79,9 +55,7 @@ def task1():
     for x in tickets:
         print("hello"+str(x.ticket_counter))
     """
-    # print(tickets)
-    # print("this is a:...")
-    # a = lotto_draw()
+
     print("--LOTTO DRAW--")
     for i in range(amt_tickets):
         temp=lotto_ticket()
@@ -90,9 +64,6 @@ def task1():
         print(f"{new} ", end="")
     print()
     enter = input("---Press enter to check your winnings---")
-    # for each obj call print and return win
-    # add win amt to total
-    # if user amt >=2 repeat - while user_amt>=2 continue else break
 
 
 def task2():
