@@ -1,25 +1,6 @@
 num_of_jumps = 0
-################################
-# EECS1015 York Univresity
-# Lab 4 - Starter Code
-# Name:
-# Section A/B
-# Student id:
-# Email:
-################################
-# check all cases and input
-# iterate examples
-# check required return values
-# check if all functions are correct
+
 my_list = []
-
-
-def print_student_info():
-    print("Name: Alexa Lupo")
-    print("Section B")
-    print("Student id: 219411305")
-    print("Email: alupo@my.yorku.ca")
-
 
 import time
 from random import randint
