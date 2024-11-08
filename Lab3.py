@@ -1,18 +1,4 @@
-#########
-# EECS1015 Fall 2022
-# Lab 3
-# Name:
-# Student id:
-#########
 import random
-
-print("---- Lab 3 ----")
-print("Name: Alexa Lupo")
-print("Section B")
-print("Student id: 219411305")
-print("Email: alupo@my.yorku.ca")
-
-# Task 1
 
 print("\n---- Task 1: Simple order ----")
 print("""**Select menu item**
@@ -76,7 +62,7 @@ else:
 print("Amount: $" + str(format(cost, ".2f")) + "\nDiscount: $" + str(
     format(total_discount, ".2f")) + "\n--------------------" + "\nTotal: $" + str(format(total_cost, ".2f")))
 
-# Task 2
+
 print("\n---- Task 2: Draw circle ----")
 x = -10
 y = -10
@@ -91,9 +77,9 @@ for x in range(-10, 11):
         else:
             print('.', end='')
 
-# task 3
+
 print("\n---- Task 3: Dice pair expected value ----")
-# loop to try again if input is y
+
 try_again = "Y"
 while try_again.upper() == "Y":
     times_roll = int(input("Roll dice how many times? "))
@@ -111,7 +97,6 @@ while try_again.upper() == "Y":
     if try_again.upper() == "Y":
         continue
 
-# task 4
 
 print("\n---- Task 4: Compute PI ----")
 real_pi = 3.14159265359
