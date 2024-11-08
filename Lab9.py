@@ -1,7 +1,6 @@
 import random
-#add headers
+
 def task1():
-    #problem printing last example
     again="Y"
     while again.upper()=="Y":
         long=input("Enter a long sentence: ")
@@ -15,7 +14,6 @@ def task1():
             else:
                 with1.append(word)
         print(f"With substring: '",end="")
-        #print(len(without))
         count = 1
         for x in without:
             #print(count)
@@ -108,7 +106,6 @@ def task3():
             word_list.append(first_input)
             first_input = input(f"[Input {counter:2}] Word: ")
 
-        #print(word_list)
         nums=1
         for x in word_list:
             my_dict[nums]=x
@@ -145,16 +142,17 @@ def task4():
             print(f"rangeChecker [{self.id:2}]  '{self.name:10}' - {self.min:8.2f} <= num <= {self.max:8.2f}")
     again="Y"
     while again.upper()=="Y":
-    #object 1
+
         first=input("Range 0 Name, Min, Max: ")
         new1=first.split(",")
         first_obj = rangeChecker(new1[0], float(new1[1]), float(new1[2]))
 
-    #object 2
+
         second = input("Range 1 Name, Min, Max: ")
         new2 = second.split(",")
         second_obj = rangeChecker(new2[0], float(new2[1]), float(new2[2]))
-    #object 3
+
+        
         third = input("Range 2 Name, Min, Max: ")
         new3 = third.split(",")
         third_obj = rangeChecker(new3[0], float(new3[1]), float(new3[2]))
@@ -163,41 +161,42 @@ def task4():
         user_list_of_nums=user_in_nums.split(",")
 
 
-
-    #within
-    #first obj runthrough
         x = rangeChecker.print1(first_obj)
         for i in range(len(user_list_of_nums)):
             user_list_of_nums[i] = float(user_list_of_nums[i])
             print(f"Inside range [{user_list_of_nums[i]:8.2f}]: ",end="")
             print(first_obj.within_range(user_list_of_nums[i]))
-    #second obj
+
+        
         y = rangeChecker.print1(second_obj)
         for i in range(len(user_list_of_nums)):
             user_list_of_nums[i] = float(user_list_of_nums[i])
             print(f"Inside range [{user_list_of_nums[i]:8.2f}]: ",end="")
             print(second_obj.within_range(user_list_of_nums[i]))
-    #third obj
+
+        
         z = rangeChecker.print1(third_obj)
         for i in range(len(user_list_of_nums)):
             user_list_of_nums[i] = float(user_list_of_nums[i])
             print(f"Inside range [{user_list_of_nums[i]:8.2f}]: ",end="")
             print(third_obj.within_range(user_list_of_nums[i]))
 
-    #outside
-    #first obj runthrough
+
+        
         x = rangeChecker.print1(first_obj)
         for i in range(len(user_list_of_nums)):
             user_list_of_nums[i] = float(user_list_of_nums[i])
             print(f"Outside range [{user_list_of_nums[i]:8.2f}]: ",end="")
             print(first_obj.outside_range(user_list_of_nums[i]))
-    #second obj
+
+        
         y = rangeChecker.print1(second_obj)
         for i in range(len(user_list_of_nums)):
             user_list_of_nums[i] = float(user_list_of_nums[i])
             print(f"Outside range [{user_list_of_nums[i]:8.2f}]: ",end="")
             print(second_obj.outside_range(user_list_of_nums[i]))
-    #third obj
+
+        
         z = rangeChecker.print1(third_obj)
         for i in range(len(user_list_of_nums)):
             user_list_of_nums[i] = float(user_list_of_nums[i])
