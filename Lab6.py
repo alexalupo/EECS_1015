@@ -1,24 +1,5 @@
 import random
 
-
-######################################
-# EECS1015 - Fall 2022
-# Lab
-#####################################
-
-def print_student_info():
-    print("Name: XXXX")
-    print("ID: XXXXX")
-    print("Section A")
-    print("email: xxxxxx")
-
-
-def task0():
-    print_student_info()
-
-
-# Functions for task 1
-# Write the function average_num() outside your task1() function.
 def average_num(*nums):
     total = 0
     counter = 0
@@ -30,7 +11,6 @@ def average_num(*nums):
 
 
 def task1():
-    # done repeat if y is again input
     again = "Y"
     while again.upper() == "Y":
         num_of_nums = int(input("Input 4 or 5 numbers? "))
@@ -67,10 +47,6 @@ def task1():
                     x5 = int(i)
                     iteration += 1
             average_num(x1, x2, x3, x4, x5)
-
-            # average_num(x1,x2,x3,x4,x5)
-
-        # four nums
         else:
             four_nums = input("Input 4 numbers [x1, x2, x3, x4] : ")
             four_split = four_nums.split(",")
@@ -98,11 +74,6 @@ def task1():
         if again.upper() == "Y":
             continue
 
-
-# Task 2
-# Write function build_stock_dict() here.
-
-# This function is provided for you.
 def print_stock_dict(stock_dict):
     keys = list(stock_dict.keys())
     print("{:10s} {:6s}  {}".format("Symbol", "Price", "Company Name"))
@@ -120,8 +91,6 @@ def string_to_stock_dict(*astring):
     string_stock_dict = {}
     split_user = asting.split(":")
 
-    # This function should take the string in the format shown in (B) and convert it to the dictionary as described in (A).
-
 
 def task2():
     stock_dict1 = {"SNAP": ["Snap", 10.08], "PINS": ["Pinterest", 29.40], "GOOG": ["Google", 96.58]}
@@ -131,8 +100,6 @@ def task2():
     stock_dict2 = build_stock_dict(stock_list_string)
     print_stock_dict(stock_dict2)
 
-
-# Task 3 functions create_rand_list(), delete_list_item(), print_list() here ourside task3()
 def create_rand_list():
     random_list = []
     num_of_element = random.randint(5, 15)
@@ -141,12 +108,7 @@ def create_rand_list():
     for i in range(num_of_element):
         new_list_val = random.randint(min_value, max_value)
         random_list.append(new_list_val)
-    """
-    print(f"elements: {num_of_element}")
-    print(f"min value: {min_value}")
-    print(f"max value: {max_value}")
-    print(random_list)
-    """
+
     return random_list
 
 
@@ -186,8 +148,6 @@ def task3():
             continue
 
 
-# Task 4
-# Write functions print_image and uncompress_rle_image() here
 def print_image(text_image):
     """
     for i in text_image:
@@ -228,14 +188,6 @@ def uncompress_rle_image(rle_image):
 """
 def uncompress_rle_image(rle_image):
     rle_list = []
-
-    # print(rle_image[0][0][0])
-    # print(rle_image[0])
-    # rle_image has first values until len of list-1 but second value is only 0 bc each list las only one tuple value at 0th position
-
-    # only works for first tuple in list
-    # iterate through list of lists
-    # for i in raneg len of list iterate through for loop
     for x in rle_image:
         # print(f"x value {x}")
         for i in x:
@@ -258,14 +210,6 @@ def uncompress_rle_image(rle_image):
         rle_list.append(add_list_val)
     print(rle_list)
 
-
-    # for i in rle_image iterate and get individual list values and append main list with strings
-    # ["5,'-'","2," ",...... etc"]
-    # iterate through main list and split i at ",". multiply string by num
-    # iterate through list multiply list[i][1] by list[i][0]
-    # take vaues above no multiply and append values as lists together to one main list rather than tuples
-
-    #
     pass
 
 
@@ -320,16 +264,16 @@ def task4():
 
 
 def main():
-    # task0()
+    task0()
     print("\n--- Task 1: Average numbers ---")
-    # check spacing req between numbers
-    # task1()
-    # done except comment
+
+    task1()
+
     print("\n--- Task 2: Text to dictionary---")
-    # task2()
+    task2()
     print("\n--- Task 3: Deleting from list---")
-    # task3()
-    # done
+    task3()
+
     print("\n--- Task 4: RLE decoding  ---")
     task4()
 
