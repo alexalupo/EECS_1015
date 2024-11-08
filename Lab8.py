@@ -1,22 +1,6 @@
-##################################
-# EECS1015 - York University
-# Author: Michael S. Brown
-# (c) MS Brown. This code cannot be shared without permission from the
-# author.
-# Lab 8 starter code
-#
-##################################
-
 import random
 
-def print_student_info():
-    print("Name: Alexa Lupo")
-    print("Student ID: 219411305")
-    print("Section B")
-    print("Email: alupo@my.yorku.ca")
 
-def task0():
-    print_student_info()
 
 class lotto_ticket:
   ticket_counter = 1
@@ -82,7 +66,7 @@ def task1():
     comp_values=lotto_draw()
     for value in comp_values:
       print(f"{value:2} ",end="")
-    #print(comp_values)
+
     print()
 
     user_enter=input("---Press enter to check your winnings--- ")
