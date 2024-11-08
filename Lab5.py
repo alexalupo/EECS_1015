@@ -1,28 +1,5 @@
-################################
-# EECS1015, York University
-# Lab 5 starting code
-# Name:  Alexa Lupo
-# Section:  B
-# Student ID: 219411305
-# Email:  alupo@my.yorku.ca
-################################
-
 import random
 
-
-# Print info
-def print_lab_info():
-    print("---- Lab 5 ----")
-    print("Name: Alexa Lupo")
-    print("Section B")
-    print("Student id: 21941305")
-    print("Email: alupo@my.yorku.ca")
-
-
-def task0():
-    # Example of calling a function from taskX() functions.
-    # you should write all functions "outside" your task1()-task4() functions.
-    print_lab_info()
 
 def input_list():
     my_list = []
@@ -67,7 +44,6 @@ def task1():
 
 
 def task2():
-    # done
     string_list = []
     user_string = input("Input a long string: ")
     upper_user = user_string.upper()
@@ -138,27 +114,6 @@ def print_set(aSet, prompt=""):
 
 
 def task4():
-    # use set not list
-    # while len of set is less than 6 keep generating numbers randomly
-    """
-    def random_set_try1():
-      numbers=[]
-      for i in range (5):
-        a=random.randint(1,20)
-        while a in numbers:
-          a=random.randint(1,20)
-        else:
-          numbers.append(a)
-      number_set=numbers.set()
-      return number_set
-    """
-
-
-
-    # fix so repeats when num>20 <1 and len<5
-    # while loop infinite redo wrong statement
-    # bottom works
-    # account for wrong input
     wrong = 0
     user_lotto = input("Enter 5 numbers between 1-20: ")
     individual_numbers = user_lotto.split()
@@ -194,19 +149,14 @@ def task4():
 
 
 def main():
-    ### Don't forget to update print_lab_info() function
-    # task0()
-
     print("\n---- Task 1: List average ----")
-    # task1()
+    task1()
 
     print("\n---- Task 2: Character count graph ----")
-    # task2()
-    # fix so prints same output as lab sheet
-    # clean .upper()
+    task2()
 
     print("\n---- Task 3: Encoder/decoder ----")
-    # task3()
+    task3()
 
     print("\n---- Task 4: Lotto LESS ----")
     task4()
